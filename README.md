@@ -62,8 +62,8 @@ Once the application is running, you can access the H2 database console by navig
 http://localhost:8080/h2-console
 ```
 
-- **JDBC URL**: `jdbc:h2:mem:testdb` (for in-memory)
-- **Username**: `sa`
+- **JDBC URL**: `jdbc:h2:file:./data/mydb` (for file-based configuration)
+- **Username**: (leave it blank)
 - **Password**: (leave it blank)
 
 ### API Endpoints
@@ -128,7 +128,7 @@ http://localhost:8080/h2-console
 ## Validation Rules
 
 - **Email** must be in a valid email format (e.g., `user@example.com`).
-- **Phone number** must be exactly 10 digits.
+- **Phone number** must be exactly 10 digits, with no spaces or hyphens.
 - **Email** and **phone number** must be unique across all users.
 
 ## Unit Testing

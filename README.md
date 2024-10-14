@@ -36,7 +36,7 @@ This project is a simple User Management API built using **Spring Boot**. It sup
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/user-management-api.git
+git clone https://github.com/aj3011/user-management-api.git
 cd user-management-api
 ```
 

@@ -150,18 +150,19 @@ Tests cover the following scenarios:
 
 The default database being used is H2 ( file-based configuration)
 
-It allows the data to be persisted acroos application restarts ( specified as a requirement )
+It allows the data to be persisted across application restarts ( specified as a requirement )
 
-Example for a file-based H2 database:
+Following is the file-based configuration for H2 database for this project:
 
 ```properties
-spring.datasource.url=jdbc:h2:file:./data/userdb
-spring.datasource.username=sa
-spring.datasource.password=
-spring.datasource.driverClassName=org.h2.Driver
+spring.application.name=userInfo-app
+server.port=8081
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:file:./data/mydb;AUTO_SERVER=TRUE
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+spring.jpa.defer-datasource-initialization=true
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.hibernate.ddl-auto=update
-spring.h2.console.enabled=true
 ```
 
 ## Error Handling

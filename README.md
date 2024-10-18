@@ -59,7 +59,7 @@ cd user-management-api
 Once the application is running, you can access the H2 database console by navigating to:
 
 ```
-http://localhost:8080/h2-console
+http://localhost:8081/h2-console
 ```
 
 - **JDBC URL**: `jdbc:h2:file:./data/mydb` (for file-based configuration)
